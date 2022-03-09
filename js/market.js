@@ -138,7 +138,7 @@ const loadCollections = async() => {
             numLive += 1;
             let button;
             if (winners.includes(await getAddress())) {
-                button = `<button disabled class="mint-prompt-button button purchased" id="${id}-mint-button">YOU BOUGHT!</button>`;
+                button = `<button disabled class="mint-prompt-button button purchased" id="${id}-mint-button">BOUGHT!</button>`;
             }
             else {
                 button = `<button class="mint-prompt-button button" id="${id}-mint-button" onclick="purchase(${id})">BUY</button>`;
@@ -147,13 +147,22 @@ const loadCollections = async() => {
                             <a href="${collection["twitter"]}" target="_blank">
                                 <img class="collection-twitter" src="./images/twitter-white.png">
                             </a>
-                            <img class="collection-img" src="${collection["image"]}">
+                            <div class="collection-img-container">
+                                <img class="collection-img" src="${collection["image"]}">
+                                <h4 class="collection-price-div">
+                                    <div class="collection-price">${collectionPrice} <img src="${bambooImgURL}" class="bamboo-icon"></div>
+                                </h4>
+                            </div>
+                            <br class="hide-on-mobile">
+                            <br class="hide-on-mobile">
                             <div class="collection-info">
                                 <h3><a class="clickable link" href="${collection["website"]}" target="_blank" style="text-decoration: none;">${collection["name"]}⬈</a></h3>
-                                <h4>${collectionPrice} <img src="${bambooImgURL}" class="bamboo-icon"> <br> <span id="${id}-supply">${minted}</span>/<span id="${id}-max-supply">${maxSlots}</span> Filled</h4>
                                 <div class="inside-text collection-description">
                                 ${collection["description"]}
                                 </div>
+                                <h4 class="num-bought-div">
+                                    <span id="${id}-supply">${minted}</span>/<span id="${id}-max-supply">${maxSlots}</span> Filled                                
+                                </h4>
                             </div>
                             ${button}
                             </div>`
@@ -165,13 +174,22 @@ const loadCollections = async() => {
                             <a href="${collection["twitter"]}" target="_blank">
                                 <img class="collection-twitter" src="./images/twitter-white.png">
                             </a>
-                            <img class="collection-img" src="${collection["image"]}">
+                            <div class="collection-img-container">
+                                <img class="collection-img" src="${collection["image"]}">
+                                <h4 class="collection-price-div">
+                                    <div class="collection-price">${collectionPrice} <img src="${bambooImgURL}" class="bamboo-icon"></div>
+                                </h4>
+                            </div>
+                            <br class="hide-on-mobile">
+                            <br class="hide-on-mobile">
                             <div class="collection-info">
                                 <h3><a class="clickable link" href="${collection["website"]}" target="_blank" style="text-decoration: none;">${collection["name"]}⬈</a></h3>
-                                <h4>${collectionPrice} <img src="${bambooImgURL}" class="bamboo-icon"> <br> <span id="${id}-supply">${minted}</span>/<span id="${id}-max-supply">${maxSlots}</span> Filled</h4>
                                 <div class="inside-text collection-description">
                                 ${collection["description"]}
                                 </div>
+                                <h4 class="num-bought-div">
+                                    <span id="${id}-supply">${minted}</span>/<span id="${id}-max-supply">${maxSlots}</span> Filled                                
+                                </h4>
                             </div>
                             <button disabled class="mint-prompt-button button purchased" id="${id}-mint-button">SOLD OUT</button>
                             </div>`
