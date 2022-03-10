@@ -123,10 +123,10 @@ const loadCollectionsData = async() => {
         let id = Number(projectIDs[i]);
         let projectName = collectionsData[String(id)].name;
         let winners = [];
-        let eventFilter = market.filters.Purchase(id);
+        let eventFilter = market.filters.PurchaseWithName(id);
         let events = await market.queryFilter(eventFilter);
         for (let i = 0; i < events.length; i++) {
-            winners.push(events[i].args._address);
+            winners.push(`${events[i].args.name} - ${events[i].args._address}`);
         }
         projectToWL.set(projectName, winners);
         $("#wl-select").append(`<option value="${projectName}">${projectName}</option>`);

@@ -79,6 +79,64 @@ const checkBambooApproval = async() => {
     }
 };
 
+const promptForDiscord = async(id) => {
+    if (!($("#discord-popup").length)) {
+        let fakeJSX = `<div id="discord-popup">
+                        <div id="content">
+                         <p>Enter Discord User ID to associate with purchase.</p>
+                         <br>
+                         <input id="discord-name" type="text" spellcheck="false" value="" placeholder="Joona#9042">
+                         <button class="button" onclick="purchaseWithName(${id})"">COMPLETE PURCHASE</button>
+                        </div>
+                       </div>`;
+        $("body").append(fakeJSX);
+        let height = $(document).height();
+        $("body").append(`<div id='block-screen-discord' style="height:${height}px" onclick="$('#discord-popup').remove();$('#block-screen-discord').remove()"></div>`);
+    }
+}
+
+const purchaseWithName  = async(id) => {
+    try {
+        let name =$("#discord-name").val();
+        if (name == "") {
+            await displayErrorMessage(`Error: No User ID provided!`);
+
+        }
+        else if (!(name.includes("#"))) {
+            await displayErrorMessage(`Error: Must include "#" and numbers in ID!`);
+        }
+        else {
+            await market.purchaseWithName(id, name).then( async(tx_) => {
+                await waitForTransaction(tx_);
+                $('#discord-popup').remove();
+                $('#block-screen-discord').remove()
+            });
+        }
+    }
+    catch (error) {
+        if ((error.message).includes("Address has already purchased")) {
+            await displayErrorMessage(`Error: You already purchased a slot!`);
+        }
+        else if ((error.message).includes("No spots left")) {
+            await displayErrorMessage(`Error: No spots left!`);
+        }
+        else if ((error.message).includes("transfer amount exceeds balance")) {
+            await displayErrorMessage(`Error: Insufficent $BAMBOO balance!`);
+        }
+        else if ((error.message).includes("burn amount exceeds balance")) {
+            await displayErrorMessage(`Error: Insufficent $BAMBOO balance!`);
+        }
+        else if ((error.message).includes("User denied transaction signature")) {
+            console.log("Transaction rejected.");
+        }
+        else {
+            await displayErrorMessage("An error occurred. See console and window alert for details...")
+            window.alert(error);
+            console.log(error);
+        }
+    }
+}
+
 const purchase  = async(id) => {
     try {
         await market.purchase(id).then( async(tx_) => {
@@ -123,7 +181,7 @@ const loadCollections = async() => {
         let WLinfo = await market.getWhitelist(id);
         let collectionPrice = Number(formatEther(WLinfo.price));
         let winners = [];
-        let eventFilter = market.filters.Purchase(id);
+        let eventFilter = market.filters.PurchaseWithName(id);
         let events = await market.queryFilter(eventFilter);
         for (let i = 0; i < events.length; i++) {
             winners.push(events[i].args._address);
@@ -141,7 +199,7 @@ const loadCollections = async() => {
                 button = `<button disabled class="mint-prompt-button button purchased" id="${id}-mint-button">BOUGHT!</button>`;
             }
             else {
-                button = `<button class="mint-prompt-button button" id="${id}-mint-button" onclick="purchase(${id})">BUY</button>`;
+                button = `<button class="mint-prompt-button button" id="${id}-mint-button" onclick="promptForDiscord(${id})">BUY</button>`;
             }
             let fakeJSX = `<div class="partner-collection" id="project-${id}">
                             <a href="${collection["twitter"]}" target="_blank">
