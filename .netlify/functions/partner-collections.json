@@ -5,7 +5,8 @@
         "image": "./images/Deeze.png",
         "website": "#",
         "twitter": "#",
-        "max-slots": 1000
+        "max-slots": 1000,
+        "discord-required": "true"
     },
     "1": {
         "name": "Expandables2",
@@ -13,7 +14,8 @@
         "image": "./images/Deeze.png",
         "website": "#",
         "twitter": "#",
-        "max-slots": 1000
+        "max-slots": 1000,
+        "discord-required": "true"
     },
     "2": {
         "name": "Expandables3",
@@ -21,6 +23,7 @@
         "image": "./images/Dikasso.png",
         "website": "#",
         "twitter": "#",
-        "max-slots": 1
+        "max-slots": 999,
+        "discord-required": "false"
     }
 }
