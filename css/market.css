@@ -154,6 +154,7 @@
     top: .5%;
     right: 1%;
     width: 15%;
+    z-index: 9999;
 }
 
 .collection-discord {

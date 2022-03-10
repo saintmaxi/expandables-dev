@@ -209,6 +209,9 @@ const loadCollections = async() => {
             }
         }
 
+        let link = collection["website"] != "" ? `href="${collection["website"]}" target="_blank"` : "nohref";
+        let arrow = collection["website"] != "" ? "⬈" : "";
+
         if (minted != maxSlots) {
             numLive += 1;
             let button;
@@ -236,7 +239,7 @@ const loadCollections = async() => {
                             <br class="hide-on-mobile">
                             <br class="hide-on-mobile">
                             <div class="collection-info">
-                                <h3><a class="clickable link" href="${collection["website"]}" target="_blank" style="text-decoration: none;">${collection["name"]}⬈</a></h3>
+                                <h3><a class="clickable link" ${link} style="text-decoration: none;">${collection["name"]}${arrow}</a></h3>
                                 <div class="inside-text collection-description">
                                 ${collection["description"]}
                                 </div>
@@ -263,7 +266,7 @@ const loadCollections = async() => {
                             <br class="hide-on-mobile">
                             <br class="hide-on-mobile">
                             <div class="collection-info">
-                                <h3><a class="clickable link" href="${collection["website"]}" target="_blank" style="text-decoration: none;">${collection["name"]}⬈</a></h3>
+                                <h3><a class="clickable link" ${link} style="text-decoration: none;">${collection["name"]}${arrow}</a></h3>
                                 <div class="inside-text collection-description">
                                 ${collection["description"]}
                                 </div>
