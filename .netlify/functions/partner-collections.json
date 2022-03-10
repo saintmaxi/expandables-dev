@@ -62,13 +62,13 @@
         "max-slots": 5,
         "discord-required": "false"
     },
-    "7": {
+    "8": {
         "name": "War Kittens",
         "description": "The on-chain PvP RPG",
         "image": "https://media.discordapp.net/attachments/909753274117267526/951583332481773658/https3A2F2Fs3-us-west-2.png",
         "website": "https://warkittens.xyz/",
         "twitter": "https://twitter.com/0xWarKittens",
-        "max-slots": 5,
+        "max-slots": 4,
         "discord-required": "false"
     }
 }
