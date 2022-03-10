@@ -1,29 +1,11 @@
 {
     "0": {
-        "name": "Expandables1",
-        "description": "Expandables is a series of cute on-chain generated pixel pandas using Chainlink VRF for generation. Adopt and venture your way into the Metaverse using our ERC-20 token $BAMBOO and the upcoming Panda Voxels!",
-        "image": "./images/Deeze.png",
-        "website": "#",
-        "twitter": "#",
-        "max-slots": 1000,
+        "name": "vSamurai",
+        "description": "A limited-supply genesis NFT collection on the Ethereum Network. Play and Earn as you follow the path of vSamurai. Coming soon.",
+        "image": "https://pbs.twimg.com/media/FMzFI3DXwAY6BNn?format=png&name=small",
+        "website": "",
+        "twitter": "https://twitter.com/vSamurai_NFT",
+        "max-slots": 20,
         "discord-required": "true"
-    },
-    "1": {
-        "name": "Expandables2",
-        "description": "Expandables is a series of cute on-chain generated pixel pandas using Chainlink VRF for generation. Adopt and venture your way into the Metaverse using our ERC-20 token $BAMBOO and the upcoming Panda Voxels!",
-        "image": "./images/Deeze.png",
-        "website": "#",
-        "twitter": "#",
-        "max-slots": 1000,
-        "discord-required": "true"
-    },
-    "2": {
-        "name": "Expandables3",
-        "description": "Expandables is a series of cute on-chain generated pixel pandas using Chainlink VRF for generation. Adopt and venture your way into the Metaverse using our ERC-20 token $BAMBOO and the upcoming Panda Voxels!",
-        "image": "./images/Dikasso.png",
-        "website": "#",
-        "twitter": "#",
-        "max-slots": 999,
-        "discord-required": "false"
     }
 }
