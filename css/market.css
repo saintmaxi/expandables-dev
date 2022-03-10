@@ -105,6 +105,10 @@
     z-index: 10000;
 }
 
+.cover button:hover {
+    cursor: default;
+}
+
 .partner-collection {
 	border-style: solid;
 	/* border-color: black; */
