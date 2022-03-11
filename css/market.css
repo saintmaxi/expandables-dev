@@ -506,12 +506,13 @@ h4 {
         padding: 0.2vh .5vh;
 		border-width: 2px;
         display: inline-block;
+        width: 50%;
     }
 
     .collection-img {
 		border-width: 2px;
-        width: 150px;
-        height: 150px;
+        width: 175px;
+        height: 175px;
         min-width: 0px !important;
         min-height: 0px !important;
     }
