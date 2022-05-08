@@ -277,7 +277,7 @@
         "twitter": "https://twitter.com/dankducksNFT",
         "max-slots": 20,
         "discord-required": "true",
-        "display-on-market": "true"
+        "display-on-market": "false"
     },
     "31": {
         "name": "Irukandji",
@@ -297,7 +297,7 @@
         "twitter": "https://twitter.com/MSB_NFT",
         "max-slots": 20,
         "discord-required": "true",
-        "display-on-market": "true"
+        "display-on-market": "false"
     },
     "33": {
         "name": "Shinobi Bunny NFT",
@@ -307,7 +307,7 @@
         "twitter": "https://twitter.com/shinobibunnynft",
         "max-slots": 15,
         "discord-required": "true",
-        "display-on-market": "true"
+        "display-on-market": "false"
     },
     "34": {
         "name": "Kuroro",
@@ -317,6 +317,736 @@
         "twitter": "https://twitter.com/kurorobeast",
         "max-slots": 3,
         "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "35": {
+        "name": "Fruity Loopz",
+        "description": "5'555 Fruity Loopz will be released in the ETH forest soon",
+        "image": "https://pbs.twimg.com/profile_images/1502403612059779081/txKFCRaa_400x400.jpg",
+        "website": "https://www.fruityloopz.com/",
+        "twitter": "https://twitter.com/FruityLoopzNFT",
+        "max-slots": 6,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "36": {
+        "name": "Irukandji REFILL",
+        "description": "The World of Irukandji. A face, a brand, and a lifestyle by https://twitter.com/yourbae",
+        "image": "https://pbs.twimg.com/profile_images/1505941066511314945/m-oYofK9_400x400.jpg",
+        "website": "https://www.irukandji.gg/",
+        "twitter": "https://twitter.com/irukandjiworld",
+        "max-slots": 10,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "37": {
+        "name": "Kuroro REFILL",
+        "description": "PVP focused NFT RPG",
+        "image": "https://pbs.twimg.com/profile_images/1497535764447567873/-Y6pmuB1_400x400.jpg",
+        "website": "",
+        "twitter": "https://twitter.com/kurorobeast",
+        "max-slots": 2,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "38": {
+        "name": "Ether Royale",
+        "description": "Revolutionizing NFT utility. First W2E NFT battle royale. Holders spectate as 8,888 soldiers battle for valuable NFTs & prizes",
+        "image": "https://pbs.twimg.com/profile_images/1482199240856117250/BgMZzPIN_400x400.jpg",
+        "website": "https://etherroyale.io/",
+        "twitter": "https://twitter.com/etherroyale",
+        "max-slots": 20,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "39": {
+        "name": "Racing Social Club",
+        "description": "A unique collection of 7878 Racers",
+        "image": "https://pbs.twimg.com/profile_images/1491906950937948175/wXSzT76g_400x400.jpg",
+        "website": "",
+        "twitter": "https://twitter.com/racingsocialnft",
+        "max-slots": 10,
+        "discord-required": "false",
+        "display-on-market": "false"
+    },
+    "40": {
+        "name": "Last Hopium",
+        "description": "NFT utilities tied to 5 star hotels. Enter the Pantheon and become a MetaGod",
+        "image": "https://pbs.twimg.com/profile_images/1496157896073228300/83sbVAlD_400x400.jpg",
+        "website": "",
+        "twitter": "https://twitter.com/lasthopium",
+        "max-slots": 8,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "41": {
+        "name": "ZOM NFT",
+        "description": "Zombie NFT collection and metaverse brand",
+        "image": "https://pbs.twimg.com/profile_images/1504633847387865089/DBSgEhQD_400x400.jpg",
+        "website": "https://www.zomnft.com/",
+        "twitter": "https://twitter.com/ZomNFT",
+        "max-slots": 20,
+        "discord-required": "false",
+        "display-on-market": "false"
+    },
+    "42": {
+        "name": "Zomby world",
+        "description": "Creating a new Universe w/ Community",
+        "image": "https://pbs.twimg.com/profile_images/1507458098977734657/PWUDQvmz_400x400.jpg",
+        "website": "https://www.zombyworld.io/",
+        "twitter": "https://twitter.com/ZombyWorld",
+        "max-slots": 5,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "43": {
+        "name": "Astro Mallows",
+        "description": "4,444 Squishy 3D AstroMallows coming April, 2022 on Ethereum",
+        "image": "https://pbs.twimg.com/media/FOjMYy-XoAQxoft?format=jpg&name=large",
+        "website": "",
+        "twitter": "https://twitter.com/Astromallows",
+        "max-slots": 10,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "44": {
+        "name": "The Exalted",
+        "description": "5,000 Pixel Avatars Based On Fantasy RPGs",
+        "image": "https://pbs.twimg.com/profile_images/1481028650195554304/0S2in3jQ_400x400.jpg",
+        "website": "https://www.exaltednft.com/",
+        "twitter": "https://twitter.com/exaltedNFT",
+        "max-slots": 15,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "45": {
+        "name": "Loveless City",
+        "description": "Welcome to Loveless City. Population: You",
+        "image": "https://pbs.twimg.com/profile_images/1491988588531044357/mpBt1ZpF_400x400.jpg",
+        "website": "https://www.loveless.city/",
+        "twitter": "https://twitter.com/loveless_city",
+        "max-slots": 15,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "46": {
+        "name": "Myria",
+        "description": "Myria is a blockchain gaming ecosystem powered by Myria's Ethereum L2 scaling solution",
+        "image": "https://pbs.twimg.com/profile_images/1480412345780293638/Jwxbv8OI_400x400.png",
+        "website": "https://myria.com/",
+        "twitter": "https://twitter.com/myriagames",
+        "max-slots": 3,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "47": {
+        "name": "Loveless City REFILL",
+        "description": "Welcome to Loveless City. Population: You",
+        "image": "https://pbs.twimg.com/profile_images/1491988588531044357/mpBt1ZpF_400x400.jpg",
+        "website": "https://www.loveless.city/",
+        "twitter": "https://twitter.com/loveless_city",
+        "max-slots": 10,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "48": {
+        "name": "Naive Nekos",
+        "description": "Lot of Naive Nekos roaming around Nekoland",
+        "image": "https://pbs.twimg.com/profile_images/1498704943783444483/8QN9JMYW_400x400.jpg",
+        "website": "https://www.naivenekos.com/",
+        "twitter": "https://twitter.com/NaiveNekos",
+        "max-slots": 20,
+        "discord-required": "false",
+        "display-on-market": "false"
+    },
+    "49": {
+        "name": "Astro Mallows REFILL",
+        "description": "4,444 Squishy 3D AstroMallows coming April, 2022 on Ethereum",
+        "image": "https://pbs.twimg.com/media/FOjMYy-XoAQxoft?format=jpg&name=large",
+        "website": "",
+        "twitter": "https://twitter.com/Astromallows",
+        "max-slots": 10,
+        "discord-required": "true",
+        "display-on-market": "false"
+    },
+    "50": {
+        "name": "Antebellum Games 2nd Refill",
+        "description": "Antebellum is a Crypto Real Time Strategy game coming to iOS and Android Winter 2022",
+        "image": "https://pbs.twimg.com/profile_images/1491465720395358215/z6h0MbcB_400x400.jpg",
+        "website": "https://www.antebellumgames.com/",
+        "twitter": "https://twitter.com/AntebellumGames",
+        "max-slots": 10,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "51": {
+        "name": "Multiverse VM Refill",
+        "description": "The open metaverse for all NFTs, Single Player Alpha Soon!",
+        "image": "https://pbs.twimg.com/profile_images/1485103299548553226/Jv1PmpU2_400x400.jpg",
+        "website": "https://www.multiversevm.com/",
+        "twitter": "https://twitter.com/MultiverseVM",
+        "max-slots": 10,
+        "discord-required": "false",
+        "display-on-market": "true"
+    },
+    "52": {
+        "name": "Crypto Fighters",
+        "description": "The historical Play2Earn game from Jan 2018 is back!",
+        "image": "https://pbs.twimg.com/profile_images/1493342581450842119/Usbt-UqH_400x400.png",
+        "website": "https://www.cryptofighters.io/",
+        "twitter": "https://twitter.com/CryptoFighters",
+        "max-slots": 10,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "53": {
+        "name": "Neon Pantheon",
+        "description": "Experiential AR NFT project by fully doxxed team. Celebrating cultural diversity and inclusivity.",
+        "image": "https://pbs.twimg.com/profile_images/1491083015774081024/7ezJBFzl_400x400.jpg",
+        "website": "https://neonpantheon.com/",
+        "twitter": "https://twitter.com/NeonPantheonNFT",
+        "max-slots": 15,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "54": {
+        "name": "I'm Starving",
+        "description": "Do you have some food? On-chain story driven community game launching soon on Arbitrum",
+        "image": "https://pbs.twimg.com/profile_images/1501274986723647494/0N2wHTO6_400x400.jpg",
+        "website": "",
+        "twitter": "https://twitter.com/ImStarvingNFT",
+        "max-slots": 10,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "55": {
+        "name": "Voxel Ville Avatars",
+        "description": "Voxel Ville is a digitized village that exists on the Ethereum blockchain in a metaverse very, very far away.",
+        "image": "https://pbs.twimg.com/profile_images/1445815366303715341/fFCib-kf_400x400.jpg",
+        "website": "https://www.voxelville.io/",
+        "twitter": "https://twitter.com/VilleVoxel",
+        "max-slots": 20,
+        "discord-required": "false",
+        "display-on-market": "true"
+    },
+    "56": {
+        "name": "Cyberia",
+        "description": "Metaverse-focused society with a gamified ecosystem and intricate hierarchy structure.",
+        "image": "https://pbs.twimg.com/profile_images/1479118021234806793/UoZIXNDl_400x400.jpg",
+        "website": "https://entercyberia.com/",
+        "twitter": "https://twitter.com/EnterCyberia",
+        "max-slots": 5,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "57": {
+        "name": "Neon Pantheon REFILL",
+        "description": "Experiential AR NFT project by fully doxxed team. Celebrating cultural diversity and inclusivity.",
+        "image": "https://pbs.twimg.com/profile_images/1491083015774081024/7ezJBFzl_400x400.jpg",
+        "website": "https://neonpantheon.com/",
+        "twitter": "https://twitter.com/NeonPantheonNFT",
+        "max-slots": 15,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "58": {
+        "name": "Smilies NFT",
+        "description": "A ray of sunshine radiating positivity across web3",
+        "image": "https://pbs.twimg.com/profile_images/1490770309594501124/Bmgxorom_400x400.jpg",
+        "website": "https://smiliesnft.xyz/",
+        "twitter": "https://twitter.com/smiliesnft?lang=en",
+        "max-slots": 10,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "59": {
+        "name": "Voxel Ville Avatars REFILL",
+        "description": "Voxel Ville is a digitized village that exists on the Ethereum blockchain in a metaverse very, very far away.",
+        "image": "https://pbs.twimg.com/profile_images/1445815366303715341/fFCib-kf_400x400.jpg",
+        "website": "https://www.voxelville.io/",
+        "twitter": "https://twitter.com/VilleVoxel",
+        "max-slots": 20,
+        "discord-required": "false",
+        "display-on-market": "true"
+    },
+    "60": {
+        "name": "I'm Starving REFILL",
+        "description": "Do you have some food? On-chain story driven community game launching soon on Arbitrum",
+        "image": "https://pbs.twimg.com/profile_images/1501274986723647494/0N2wHTO6_400x400.jpg",
+        "website": "",
+        "twitter": "https://twitter.com/ImStarvingNFT",
+        "max-slots": 10,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "61": {
+        "name": "Howling Meta Wolves",
+        "description": "Testing web3 limits by introducing new ways to control PFPs & building AX6 Hub",
+        "image": "https://pbs.twimg.com/profile_images/1511108562310811649/DBoc5i4v_400x400.jpg",
+        "website": "https://howlingmetawolves.com/",
+        "twitter": "https://twitter.com/hmwolves?lang=en",
+        "max-slots": 10,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "62": {
+        "name": "Clay",
+        "description": "Fully on-chain 3D generative art, by Kai",
+        "image": "https://pbs.twimg.com/profile_images/1510176024616902661/GkaCNTZe_400x400.jpg",
+        "website": "",
+        "twitter": "https://twitter.com/we_are_clay_",
+        "max-slots": 10,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "63": {
+        "name": "The Squids, Squid Ink",
+        "description": "1,000 Genesis Lab-made NFTs designed to play games on the metaverse. Please note this is not a guaranteed whitelist spot!",
+        "image": "https://pbs.twimg.com/profile_images/1495503180347719683/_rhpZdpB_400x400.png",
+        "website": "https://thesquids.io/",
+        "twitter": "https://twitter.com/TheSquids_NFT",
+        "max-slots": 5,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "64": {
+        "name": "Voxel Ville Avatars 2nd REFILL",
+        "description": "Voxel Ville is a digitized village that exists on the Ethereum blockchain in a metaverse very, very far away.",
+        "image": "https://pbs.twimg.com/profile_images/1445815366303715341/fFCib-kf_400x400.jpg",
+        "website": "https://www.voxelville.io/",
+        "twitter": "https://twitter.com/VilleVoxel",
+        "max-slots": 40,
+        "discord-required": "false",
+        "display-on-market": "true"
+    },
+    "65": {
+        "name": "Copium Wars",
+        "description": "Discounted whitelist spot (-50% of the mint price). Copium Wars: Cult of the Dead Bear",
+        "image": "https://pbs.twimg.com/profile_images/1483182004900356099/a3vFef6G_400x400.png",
+        "website": "https://copiumwars.xyz/",
+        "twitter": "https://twitter.com/copiumwars",
+        "max-slots": 8,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "66": {
+        "name": "Clay REFILL",
+        "description": "Fully on-chain 3D generative art, by Kai",
+        "image": "https://pbs.twimg.com/profile_images/1510176024616902661/GkaCNTZe_400x400.jpg",
+        "website": "https://www.weareclay.io/",
+        "twitter": "https://twitter.com/we_are_clay_",
+        "max-slots": 10,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "67": {
+        "name": "Warkittens REFILL",
+        "description": "The on-chain PvP RPG",
+        "image": "https://pbs.twimg.com/profile_images/1481060623018610688/ciJcICGK_400x400.jpg",
+        "website": "",
+        "twitter": "https://twitter.com/0xWarKittens",
+        "max-slots": 4,
+        "discord-required": "false",
+        "display-on-market": "true"
+    },
+    "68": {
+        "name": "Homie Faces",
+        "description": "An NFT Collection that Put Community First",
+        "image": "https://pbs.twimg.com/profile_images/1494344723657805825/Yog5ZiSQ_400x400.jpg",
+        "website": "",
+        "twitter": "https://twitter.com/HomieFacesNFT",
+        "max-slots": 15,
+        "discord-required": "true",
+        "display-on-market": "false"
+    },
+    "69": {
+        "name": "Voxel Ville 3rd REFILL",
+        "description": "Voxel Ville is a digitized village that exists on the Ethereum blockchain in a metaverse very, very far away.",
+        "image": "https://pbs.twimg.com/profile_images/1445815366303715341/fFCib-kf_400x400.jpg",
+        "website": "https://www.voxelville.io/",
+        "twitter": "https://twitter.com/VilleVoxel",
+        "max-slots": 30,
+        "discord-required": "false",
+        "display-on-market": "true"
+    },
+    "70": {
+        "name": "Clay 2nd REFILL",
+        "description": "Fully on-chain 3D generative art, by Kai",
+        "image": "https://pbs.twimg.com/profile_images/1510176024616902661/GkaCNTZe_400x400.jpg",
+        "website": "https://www.weareclay.io/",
+        "twitter": "https://twitter.com/we_are_clay_",
+        "max-slots": 20,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "71": {
+        "name": "Birdez Gang",
+        "description": "Evolving the PFP concept to bring meaning in life",
+        "image": "https://pbs.twimg.com/profile_images/1465448174328369158/hdAcXEHK_400x400.jpg",
+        "website": "https://birdezgang.com/",
+        "twitter": "https://twitter.com/BirdezGang",
+        "max-slots": 5,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "72": {
+        "name": "Pirate Pals",
+        "description": "444 Genesis Collection - Sold Out. 4444 Pirate Pals - Coming Soon",
+        "image": "https://pbs.twimg.com/profile_images/1507390653445062658/HRYhpBml_400x400.jpg",
+        "website": "",
+        "twitter": "https://twitter.com/PiratePalsNFT/photo",
+        "max-slots": 20,
+        "discord-required": "true",
+        "display-on-market": "false"
+    },
+    "73": {
+        "name": "Rocketheadz",
+        "description": "Race for ETH. LA based Game Studio launching a unique P2E NFT game. Get $KRANK",
+        "image": "https://pbs.twimg.com/profile_images/1505977435778547712/mQKaBQhV_400x400.jpg",
+        "website": "",
+        "twitter": "https://twitter.com/Rocketheadz",
+        "max-slots": 15,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "74": {
+        "name": "Mendel",
+        "description": "Following Mendel’s mesmerising journey through space.",
+        "image": "https://pbs.twimg.com/profile_images/1495532035754049550/aJOhIGop_400x400.jpg",
+        "website": "",
+        "twitter": "https://twitter.com/MendelNFT",
+        "max-slots": 20,
+        "discord-required": "true",
+        "display-on-market": "false"
+    },
+    "75": {
+        "name": "Luv Bugz",
+        "description": "Free mint project on Arbitrum. Collection of 5,555 Luv Bugz. ~ STAKING ~ P2E ~ AIRDROPS ~",
+        "image": "https://pbs.twimg.com/profile_images/1489805548455292929/u2XQtBIy_400x400.jpg",
+        "website": "https://luvbugznft.com/",
+        "twitter": "https://twitter.com/BugzNft",
+        "max-slots": 10,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "77": {
+        "name": "Kong Hub",
+        "description": "Whitepaper release soon",
+        "image": "https://pbs.twimg.com/profile_images/1493688723183124484/5GM9_hm9_400x400.jpg",
+        "website": "",
+        "twitter": "https://twitter.com/Konghub_",
+        "max-slots": 15,
+        "discord-required": "true",
+        "display-on-market": "false"
+    },
+    "78": {
+        "name": "Voxels NFT",
+        "description": "Algorithmic generated collective || Own your curated share",
+        "image": "https://pbs.twimg.com/profile_images/1496385945297461250/Kqf7cAmi_400x400.jpg",
+        "website": "",
+        "twitter": "https://twitter.com/Voxels_NFT",
+        "max-slots": 5,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "79": {
+        "name": "Voxels FREE NFT",
+        "description": "Algorithmic generated collective || Own your curated share",
+        "image": "https://pbs.twimg.com/profile_images/1496385945297461250/Kqf7cAmi_400x400.jpg",
+        "website": "",
+        "twitter": "https://twitter.com/Voxels_NFT",
+        "max-slots": 3,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "80": {
+        "name": "Neon Pantheon 2nd REFILL",
+        "description": "Experiential AR NFT project by fully doxxed team. Celebrating cultural diversity and inclusivity",
+        "image": "https://pbs.twimg.com/profile_images/1491083015774081024/7ezJBFzl_400x400.jpg",
+        "website": "https://neonpantheon.com/",
+        "twitter": "https://twitter.com/NeonPantheonNFT",
+        "max-slots": 10,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "81": {
+        "name": "Skull Dungeon",
+        "description": "SKULL DUNGEON 💀 3777 Genesis Collection, staking/ breeding.",
+        "image": "https://pbs.twimg.com/profile_images/1507771937111613450/fKeA191u_400x400.jpg",
+        "website": "https://skulldungeon.io/",
+        "twitter": "https://twitter.com/SkullDungeonNFT",
+        "max-slots": 15,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "82": {
+        "name": "Voxels NFT REFILL",
+        "description": "Algorithmic generated collective || Own your curated share",
+        "image": "https://pbs.twimg.com/profile_images/1496385945297461250/Kqf7cAmi_400x400.jpg",
+        "website": "",
+        "twitter": "https://twitter.com/Voxels_NFT",
+        "max-slots": 5,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "83": {
+        "name": "Skull Dungeon REFILL",
+        "description": "SKULL DUNGEON 💀 3777 Genesis Collection, staking/ breeding.",
+        "image": "https://pbs.twimg.com/profile_images/1507771937111613450/fKeA191u_400x400.jpg",
+        "website": "https://skulldungeon.io/",
+        "twitter": "https://twitter.com/SkullDungeonNFT",
+        "max-slots": 15,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "84": {
+        "name": "Skull Dungeon 2nd REFILL",
+        "description": "SKULL DUNGEON 💀 3777 Genesis Collection, staking/ breeding.",
+        "image": "https://pbs.twimg.com/profile_images/1507771937111613450/fKeA191u_400x400.jpg",
+        "website": "https://skulldungeon.io/",
+        "twitter": "https://twitter.com/SkullDungeonNFT",
+        "max-slots": 10,
+        "discord-required": "true",
+        "display-on-market": "false"
+    },
+    "85": {
+        "name": "Neon Pantheon 3rd REFILL",
+        "description": "Experiential AR NFT project by fully doxxed team. Celebrating cultural diversity and inclusivity",
+        "image": "https://pbs.twimg.com/profile_images/1491083015774081024/7ezJBFzl_400x400.jpg",
+        "website": "https://neonpantheon.com/",
+        "twitter": "https://twitter.com/NeonPantheonNFT",
+        "max-slots": 10,
+        "discord-required": "true",
+        "display-on-market": "false"
+    },
+    "86": {
+        "name": "Demonica",
+        "description": "Demonica, a full P2E game with a 0.05 ETH mint. P2E RPG Dungeon Crawler.",
+        "image": "https://pbs.twimg.com/profile_images/1517956517789675521/72044BS6_400x400.jpg",
+        "website": "https://demonica.io/",
+        "twitter": "https://twitter.com/DemonicaNFT",
+        "max-slots": 15,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "87": {
+        "name": "Defenders of Dogewood",
+        "description": "A Play to Earn RPG 100% on chain. Stake your Defender for $TREAT or Quest & win $ETH",
+        "image": "https://pbs.twimg.com/profile_images/1501730785883267076/Hqatv-l6_400x400.png",
+        "website": "",
+        "twitter": "https://twitter.com/dogewoodnft",
+        "max-slots": 10,
+        "discord-required": "false",
+        "display-on-market": "true"
+    },
+    "88": {
+        "name": "DOPE",
+        "description": "Dawn of the Pixel Empire | P2E. Social-Fi. 100% Ethereum On-Chain. $DOPES",
+        "image": "https://pbs.twimg.com/profile_images/1494971452927676418/4YxVeD8b_400x400.jpg",
+        "website": "https://dope.voyage/",
+        "twitter": "https://twitter.com/DopeVoyage",
+        "max-slots": 10,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "89": {
+        "name": "Demonica REFILL",
+        "description": "Demonica, a full P2E game with a 0.05 ETH mint. P2E RPG Dungeon Crawler.",
+        "image": "https://pbs.twimg.com/profile_images/1517956517789675521/72044BS6_400x400.jpg",
+        "website": "https://demonica.io/",
+        "twitter": "https://twitter.com/DemonicaNFT",
+        "max-slots": 15,
+        "discord-required": "true",
+        "display-on-market": "false"
+    },
+    "90": {
+        "name": "DOPE REFILL",
+        "description": "Dawn of the Pixel Empire | P2E. Social-Fi. 100% Ethereum On-Chain. $DOPES",
+        "image": "https://pbs.twimg.com/profile_images/1494971452927676418/4YxVeD8b_400x400.jpg",
+        "website": "https://dope.voyage/",
+        "twitter": "https://twitter.com/DopeVoyage",
+        "max-slots": 10,
+        "discord-required": "true",
+        "display-on-market": "false"
+    },
+    "91": {
+        "name": "Defenders of Dogewood REFILL",
+        "description": "A Play to Earn RPG 100% on chain. Stake your Defender for $TREAT or Quest & win $ETH",
+        "image": "https://pbs.twimg.com/profile_images/1501730785883267076/Hqatv-l6_400x400.png",
+        "website": "",
+        "twitter": "https://twitter.com/dogewoodnft",
+        "max-slots": 10,
+        "discord-required": "false",
+        "display-on-market": "false"
+    },
+    "92": {
+        "name": "Perfidious",
+        "description": "Free mint project with 999 supply",
+        "image": "https://pbs.twimg.com/profile_images/1511363135344623623/NitPaxtx_400x400.jpg",
+        "website": "",
+        "twitter": "https://twitter.com/PerfidiousNFT",
+        "max-slots": 5,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "93": {
+        "name": "Perfidious REFILL",
+        "description": "Free mint project with 999 supply",
+        "image": "https://pbs.twimg.com/profile_images/1511363135344623623/NitPaxtx_400x400.jpg",
+        "website": "",
+        "twitter": "https://twitter.com/PerfidiousNFT",
+        "max-slots": 5,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "94": {
+        "name": "Prosocialities",
+        "description": "Mission-driven web3 community bringing charity to the metaverse. Girldad involved",
+        "image": "https://pbs.twimg.com/profile_images/1519930695459565568/rx-XnsWO_400x400.jpg",
+        "website": "http://prosocialites.com/",
+        "twitter": "https://twitter.com/etchedNFT",
+        "max-slots": 10,
+        "discord-required": "false",
+        "display-on-market": "false"
+    },
+    "95": {
+        "name": "Chubby Jiras",
+        "description": "Chubby Jiras is official Godjira approved derivative that expands the Godjira ecosystem!",
+        "image": "https://pbs.twimg.com/profile_images/1516019017290592261/57EwSXvJ_400x400.jpg",
+        "website": "",
+        "twitter": "https://twitter.com/ChubbyJiras",
+        "max-slots": 10,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "96": {
+        "name": "Citizens of Tajigen FIRST",
+        "description": "We are already building. The blockchain shall return.",
+        "image": "https://pbs.twimg.com/profile_images/1516180114882637835/2xuT_144_400x400.jpg",
+        "website": "",
+        "twitter": "https://twitter.com/0xTajigen",
+        "max-slots": 15,
+        "discord-required": "true",
+        "display-on-market": "false"
+    },
+    "97": {
+        "name": "Citizens of Tajigen",
+        "description": "We are already building. The blockchain shall return.",
+        "image": "https://pbs.twimg.com/profile_images/1516180114882637835/2xuT_144_400x400.jpg",
+        "website": "",
+        "twitter": "https://twitter.com/0xTajigen",
+        "max-slots": 10,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "98": {
+        "name": "Nohow",
+        "description": "Together we will build a new kind of brand, a 3.0 brand. For the Community, by the Community.",
+        "image": "https://pbs.twimg.com/profile_images/1502080844516802562/ZFQ2sZDx_400x400.jpg",
+        "website": "",
+        "twitter": "https://twitter.com/Nohowstyle/photo",
+        "max-slots": 15,
+        "discord-required": "false",
+        "display-on-market": "false"
+    },
+    "99": {
+        "name": "Citizens of Tajigen REFILL",
+        "description": "We are already building. The blockchain shall return.",
+        "image": "https://pbs.twimg.com/profile_images/1516180114882637835/2xuT_144_400x400.jpg",
+        "website": "",
+        "twitter": "https://twitter.com/0xTajigen",
+        "max-slots": 10,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "100": {
+        "name": "Chubby Jiras REFILL",
+        "description": "Chubby Jiras is official Godjira approved derivative that expands the Godjira ecosystem!",
+        "image": "https://pbs.twimg.com/profile_images/1516019017290592261/57EwSXvJ_400x400.jpg",
+        "website": "",
+        "twitter": "https://twitter.com/ChubbyJiras",
+        "max-slots": 10,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "101": {
+        "name": "Chubby Jiras 2nd REFILL",
+        "description": "Chubby Jiras is official Godjira approved derivative that expands the Godjira ecosystem!",
+        "image": "https://pbs.twimg.com/profile_images/1516019017290592261/57EwSXvJ_400x400.jpg",
+        "website": "",
+        "twitter": "https://twitter.com/ChubbyJiras",
+        "max-slots": 5,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "102": {
+        "name": "Planetsly",
+        "description": "9997 SLYGuys punching the Ethereum blockchain in the face. Sylvester Stallone's official NFT project.",
+        "image": "https://pbs.twimg.com/profile_images/1509242693842472960/hTvhtfPE_400x400.jpg",
+        "website": "https://planetsly.com/",
+        "twitter": "https://twitter.com/PlanetSlyNFT",
+        "max-slots": 15,
+        "discord-required": "false",
+        "display-on-market": "true"
+    },
+    "103": {
+        "name": "Flower Fam",
+        "description": "6969 Flowers living in the Oasis 🌍  • Driven by Community + Utility • Ecosystem live at launch",
+        "image": "https://pbs.twimg.com/profile_images/1516466765752156171/IPZPQBzS_400x400.jpg",
+        "website": "https://www.flowerfam.earth/",
+        "twitter": "https://twitter.com/FlowerFamNFT",
+        "max-slots": 5,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "104": {
+        "name": "Chainrunners XR",
+        "description": "Chain Runners XR MINT - May 16 ⛓ The most advanced metaverse-ready avatars all released under CC0",
+        "image": "https://pbs.twimg.com/profile_images/1447389249804791808/T2yW38i8_400x400.jpg",
+        "website": "https://www.chainrunners.xyz/",
+        "twitter": "https://twitter.com/chain_runners",
+        "max-slots": 5,
+        "discord-required": "false",
+        "display-on-market": "true"
+    },
+    "105": {
+        "name": "Flower Fam REFILL",
+        "description": "6969 Flowers living in the Oasis 🌍  • Driven by Community + Utility • Ecosystem live at launch",
+        "image": "https://pbs.twimg.com/profile_images/1516466765752156171/IPZPQBzS_400x400.jpg",
+        "website": "https://www.flowerfam.earth/",
+        "twitter": "https://twitter.com/FlowerFamNFT",
+        "max-slots": 5,
+        "discord-required": "true",
+        "display-on-market": "true"
+    },
+    "106": {
+        "name": "Chainrunners XR REFILL",
+        "description": "Chain Runners XR MINT - May 16 ⛓ The most advanced metaverse-ready avatars all released under CC0",
+        "image": "https://pbs.twimg.com/profile_images/1447389249804791808/T2yW38i8_400x400.jpg",
+        "website": "https://www.chainrunners.xyz/",
+        "twitter": "https://twitter.com/chain_runners",
+        "max-slots": 4,
+        "discord-required": "false",
+        "display-on-market": "true"
+    },
+    "107": {
+        "name": "Squishiland",
+        "description": "The possibilities are endless... Build, Share & Earn in the Metaverse. 🛠️ Supply of 4,444",
+        "image": "https://pbs.twimg.com/profile_images/1516589515263164434/6ybgHmSq_400x400.jpg",
+        "website": "https://www.squishiverse.com/",
+        "twitter": "https://twitter.com/SquishiverseNFT",
+        "max-slots": 5,
+        "discord-required": "false",
+        "display-on-market": "true"
+    },
+    "108": {
+        "name": "Squishiland REFILL",
+        "description": "The possibilities are endless... Build, Share & Earn in the Metaverse. 🛠️ Supply of 4,444",
+        "image": "https://pbs.twimg.com/profile_images/1516589515263164434/6ybgHmSq_400x400.jpg",
+        "website": "https://www.squishiverse.com/",
+        "twitter": "https://twitter.com/SquishiverseNFT",
+        "max-slots": 7,
+        "discord-required": "false",
         "display-on-market": "true"
     }
 }
