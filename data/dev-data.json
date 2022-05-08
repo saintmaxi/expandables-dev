@@ -16,7 +16,7 @@
         "website": "https://www.embersnft.com/",
         "twitter": "https://twitter.com/embersnft",
         "max-slots": 1000,
-        "discord-required": "true",
+        "discord-required": "false",
         "display-on-market": "true"
     }
 }
