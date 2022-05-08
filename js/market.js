@@ -27,8 +27,8 @@
 // const correctChain = 1;
 // const bambooImgURL = "./images/bamboo-icon.png";
 
-// let supportedTokens = {"0xA75F96760B715A5958a62FDe3D739eB8b2A50A7C" : "$BAMBOO",
-//                         "INSERT_ADDRESS": "$EXP"};
+// let supportedTokens = {"0xA75F96760B715A5958a62FDe3D739eB8b2A50A7C" : "./images/bamboo-icon.png",
+//                         "0xCa3A98c97d7b9d6A94079Bd1F1CAA6A8e9bb77D6": "./images/exp.png"};
 
 // let filepath = './data/partner-collections.json';
 
@@ -60,8 +60,8 @@ const etherscanBase = `https://rinkeby.etherscan.io/tx/`;
 const correctChain = 4;
 const bambooImgURL = "./images/bamboo-icon.png";
 
-let supportedTokens = {"0xA75F96760B715A5958a62FDe3D739eB8b2A50A7C" : "$BAMBOO",
-                        "0xCa3A98c97d7b9d6A94079Bd1F1CAA6A8e9bb77D6": "$EXP"};
+let supportedTokens = {"0xA75F96760B715A5958a62FDe3D739eB8b2A50A7C" : "./images/bamboo-icon.png",
+                        "0xCa3A98c97d7b9d6A94079Bd1F1CAA6A8e9bb77D6": "./images/exp.png"};
 
 let filepath = './data/dev-data.json';
 
@@ -270,7 +270,8 @@ const loadCollections = async() => {
             let expandablesStaked = (await bamboo.stakedPandasOf((await getAddress()))).length;
             let discountMultiplier = (expandablesStaked >= 25) ? .5 : 1 - (expandablesStaked * .02);
             let collectionPrice = Number(formatEther(WLinfo.price)) * discountMultiplier;
-            console.log(expandablesStaked, formatEther(WLinfo.price), collectionPrice)
+
+            let tokenImg = supportedTokens[WLinfo.acceptedCurrency]
 
             // Data from JSON file
             let collection = collectionsData[String(id)];
@@ -319,7 +320,7 @@ const loadCollections = async() => {
                                     <div class="collection-img-container">
                                         <img class="collection-img" src="${collection["image"]}">
                                         <h4 class="collection-price-div">
-                                            <div class="collection-price">${collectionPrice} <img src="${bambooImgURL}" class="bamboo-icon"></div>
+                                            <div class="collection-price">${collectionPrice} <img src="${tokenImg}" class="bamboo-icon"></div>
                                         </h4>
                                     </div>
                                     <br class="hide-on-mobile">
@@ -346,7 +347,7 @@ const loadCollections = async() => {
                                     <div class="collection-img-container">
                                         <img class="collection-img" src="${collection["image"]}">
                                         <h4 class="collection-price-div">
-                                            <div class="collection-price">${collectionPrice} <img src="${bambooImgURL}" class="bamboo-icon"></div>
+                                            <div class="collection-price">${collectionPrice} <img src="${tokenImg}" class="bamboo-icon"></div>
                                         </h4>
                                     </div>
                                     <br class="hide-on-mobile">
