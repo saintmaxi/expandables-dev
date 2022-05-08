@@ -28,7 +28,7 @@
 // const bambooImgURL = "./images/bamboo-icon.png";
 
 // let supportedTokens = {"0xA75F96760B715A5958a62FDe3D739eB8b2A50A7C" : "./images/bamboo-icon.png",
-//                         "0xCa3A98c97d7b9d6A94079Bd1F1CAA6A8e9bb77D6": "./images/exp.png"};
+//                         "0xCa3A98c97d7b9d6A94079Bd1F1CAA6A8e9bb77D6": "./images/exp-icon.png"};
 
 // let filepath = './data/partner-collections.json';
 
@@ -61,7 +61,7 @@ const correctChain = 4;
 const bambooImgURL = "./images/bamboo-icon.png";
 
 let supportedTokens = {"0xA75F96760B715A5958a62FDe3D739eB8b2A50A7C" : "./images/bamboo-icon.png",
-                        "0xCa3A98c97d7b9d6A94079Bd1F1CAA6A8e9bb77D6": "./images/exp.png"};
+                        "0xCa3A98c97d7b9d6A94079Bd1F1CAA6A8e9bb77D6": "./images/exp-icon.png"};
 
 let filepath = './data/dev-data.json';
 
@@ -144,6 +144,11 @@ const checkTokenApprovals = async() => {
 const getBambooBalance = async()=>{
     let bambooBalance = (formatEther(await bamboo.balanceOf((await getAddress()))));
     $("#bamboo-balance").html(bambooBalance);
+};
+
+const getExpBalance = async()=>{
+    let expBalance = (formatEther(await exp.balanceOf((await getAddress()))));
+    $("#exp-balance-inner").html(expBalance);
 };
 
 const promptForDiscord = async(id) => {
@@ -483,6 +488,7 @@ const updateInfo = async () => {
 
 setInterval( async() => {
     await getBambooBalance();
+    await getExpBalance();
     await updateInfo();
     if (loadedCollections) {
         await updateSupplies();
@@ -511,6 +517,7 @@ window.onload = async() => {
         await loadCollectionsData();
         await loadCollections();
         await getBambooBalance();
+        await getExpBalance();
     }
 };
 

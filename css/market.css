@@ -262,10 +262,10 @@ h4 {
 
 .collection-price {
     background-color: white;
-    padding: 0 .5vw;
+    padding: 10px;
     border: solid black .2vw;
     border-radius: 20px;
-    width: 40%;
+    width: 50%;
     display: inline-block;
 }
 
@@ -678,7 +678,7 @@ h4 {
 @media screen and (min-width: 1900px) {
 
     .collection-img {
-        width: 250px;
-        height: 250px;
+        width: 350px;
+        height: 350px;
     }
 }
