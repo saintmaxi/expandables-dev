@@ -131,11 +131,21 @@
     </div>
   </nav>
   <br>
+  <h2 id="discount-msg">2% DISCOUNT PER STAKED PANDA<br class="hide-on-desktop">(MAX 50%)</h2><br>
   <div id="approval-container" class="section body-section body-1 wf-section hidden">
    <div id="approval" class="container w-container box" style="text-align: center;">
       <h1>APPROVE MARKETPLACE</h1><br>
-      <h3>Approve marketplace to spend your $BAMBOO to purchase whitelist slots.</h3><br>
-      <button class="button" id="approval-button" onclick="approveBambooToMarket()">APPROVE</button>
+      <h3>Approve marketplace to spend your $BAMBOO and $EXP to purchase whitelist slots.</h3><br><br>
+      <div id="token-approvals">
+         <div class="token-approval" id="bamboo-approval">
+            <h3>APPROVE $BAMBOO</h3><br>
+            <button class="button approval-button" id="bamboo-approval-button" onclick="approveBambooToMarket()">APPROVE</button>
+         </div>
+         <div class="token-approval" id="exp-approval">
+            <h3>APPROVE $EXP</h3><br>
+            <button class="button approval-button" id="exp-approval-button" onclick="approveExpToMarket()">APPROVE</button>
+         </div>
+      </div>
       <br>
    </div>
   </div>

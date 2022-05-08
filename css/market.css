@@ -1,4 +1,14 @@
 
+#discount-msg {
+    text-align:center;
+    background-color: white;
+    color: black;
+    width: 80%;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 /* Approval section */
 
 #approval-container {
@@ -11,7 +21,7 @@
 
 #approval {
     margin: 0;
-    width: 50%;
+    width: 80%;
     padding: 2vw;
    background-color: white;
    color: black;
@@ -21,7 +31,19 @@
     margin: 0;
 }
 
-#approval-button {
+#token-approvals {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.token-approval {
+    width: 50%;
+    display: inline-block;
+}
+
+.approval-button {
+    width: 90%;
     margin: auto;
     color: white;
 }
@@ -454,6 +476,12 @@ h4 {
         width: 90%;
     }
 
+    #discount-msg {
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 90%;
+    }
+
     /* Approval section*/
 
     #approval-container {
@@ -469,8 +497,22 @@ h4 {
         line-height: 4.5vh !important;
     }
 
-    #approval-button {
+    #token-approvals {
+        display: initial;
+    }
+
+    .token-approval {
+        width: 100%;
+        display: inline-block;
+    }
+
+    #exp-approval {
+        margin-top: 20px;
+    }
+
+    .approval-button {
         width: 90%;
+        color: white !important;
     }
 
     /* End approval section*/
