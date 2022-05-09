@@ -301,6 +301,13 @@ h4 {
     padding: .2vw;
 }
 
+.discount-amount {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    color: red;
+}
+
 #mint-button-div {
     display: -webkit-box;
     display: -webkit-flex;

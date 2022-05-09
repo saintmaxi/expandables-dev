@@ -272,16 +272,18 @@ const loadCollections = async() => {
             let id = Number(i);
             let WLinfo = await market.getWhitelist(id);
             let collectionPrice;
+            let discountMultiplier = 1;
 
-            if (WLinfo.acceptedCurrency == bambooAddress) {
+            if (WLinfo.acceptedCurrency != bambooAddress) {
                 let expandablesStaked = (await bamboo.stakedPandasOf((await getAddress()))).length;
-                let discountMultiplier = (expandablesStaked >= 25) ? .5 : 1 - (expandablesStaked * .02);
+                discountMultiplier = (expandablesStaked >= 25) ? .5 : 1 - (expandablesStaked * .02);
                 collectionPrice = Number(formatEther(WLinfo.price)) * discountMultiplier;
             }
             else {
                 collectionPrice = Number(formatEther(WLinfo.price));
             }
 
+            let discountCaption = (discountMultiplier == 1) ? "" : `-${((1 - discountMultiplier)*100).toFixed(0)}%`;
             let tokenImg = supportedTokens[WLinfo.acceptedCurrency]
 
             // Data from JSON file
@@ -325,6 +327,7 @@ const loadCollections = async() => {
                         }
                     }
                     let fakeJSX = `<div class="partner-collection" id="project-${id}">
+                                    <h4 class="discount-amount">${discountCaption}</h4>
                                     <a href="${collection["twitter"]}" target="_blank">
                                         <img class="collection-twitter" src="./images/twitter-white.png">
                                     </a>
