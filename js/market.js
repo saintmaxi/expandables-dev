@@ -293,12 +293,10 @@ const loadCollections = async() => {
             let collectionPrice;
             let discountMultiplier = 1;
 
-            console.log (id, WLinfo)
-
             if (version == 2) {
                 if (WLinfo.acceptedCurrency == bambooAddress) {
                     let expandablesStaked = (await bamboo.stakedPandasOf((await getAddress()))).length;
-                    discountMultiplier = (expandablesStaked >= 25) ? .5 : 1 - (expandablesStaked * .02);
+                    discountMultiplier = 1 - min((expandablesStaked * (WLinfo.percentPerToken/100).toFixed(0)), (WLinfo.maxTotalPercent/100).toFixed(0));
                     collectionPrice = Number(formatEther(WLinfo.price)) * discountMultiplier;
                 }
                 else {
