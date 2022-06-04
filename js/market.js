@@ -30,7 +30,7 @@ const marketAbi = () => {
 
 const etherscanBase = `https://etherscan.io/tx/`;
 const correctChain = 1;
-const V2_START = 109;
+const V2_START = 108;
 const bambooImgURL = "./images/bamboo-icon.png";
 
 let supportedTokens = {"0xA75F96760B715A5958a62FDe3D739eB8b2A50A7C" : "./images/bamboo-icon.png",
@@ -174,9 +174,17 @@ const promptForDiscord = async(id) => {
     }
 }
 
-const purchaseWithName  = async(id) => {
+const purchaseWithName = async(id) => {
     try {
-        let name =$("#discord-name").val();
+        let marketContract;
+        if (id < V2_START) {
+            marketContract = oldMarket;
+        }
+        else {
+            marketContract = market;
+            id -= V2_START;
+        }
+        let name = $("#discord-name").val();
         if (name == "") {
             await displayErrorMessage(`Error: No User ID provided!`);
 
@@ -185,7 +193,7 @@ const purchaseWithName  = async(id) => {
             await displayErrorMessage(`Error: Must include "#" and numbers in ID!`);
         }
         else {
-            await market.purchaseWithName(id, name).then( async(tx_) => {
+            await marketContract.purchaseWithName(id, name).then( async(tx_) => {
                 await waitForTransaction(tx_);
                 $('#discord-popup').remove();
                 $('#block-screen-discord').remove()
@@ -196,17 +204,17 @@ const purchaseWithName  = async(id) => {
         if ((error.message).includes("Address has already purchased")) {
             await displayErrorMessage(`Error: You already purchased a slot!`);
         }
+        else if ((error.message).includes("burn amount exceeds allowance")) {
+            await displayErrorMessage(`Error: Market not approved to spend token!`);
+        }
         else if ((error.message).includes("No spots left")) {
             await displayErrorMessage(`Error: No spots left!`);
         }
         else if ((error.message).includes("transfer amount exceeds balance")) {
-            await displayErrorMessage(`Error: Insufficent $BAMBOO balance!`);
+            await displayErrorMessage(`Error: Insufficent token balance!`);
         }
         else if ((error.message).includes("burn amount exceeds balance")) {
-            await displayErrorMessage(`Error: Insufficent $BAMBOO balance!`);
-        }
-        else if ((error.message).includes("burn amount exceeds allowance")) {
-            await displayErrorMessage(`Error: Market not approved to spend $BAMBOO!`);
+            await displayErrorMessage(`Error: Insufficent token balance!`);
         }
         else if ((error.message).includes("User denied transaction signature")) {
             console.log("Transaction rejected.");
@@ -221,7 +229,15 @@ const purchaseWithName  = async(id) => {
 
 const purchase  = async(id) => {
     try {
-        await market.purchase(id).then( async(tx_) => {
+        let marketContract;
+        if (id < V2_START) {
+            marketContract = oldMarket;
+        }
+        else {
+            marketContract = market;
+            id -= V2_START;
+        }
+        await marketContract.purchase(id).then( async(tx_) => {
             await waitForTransaction(tx_);
         });
     }
@@ -229,17 +245,17 @@ const purchase  = async(id) => {
         if ((error.message).includes("Address has already purchased")) {
             await displayErrorMessage(`Error: You already purchased a slot!`);
         }
+        else if ((error.message).includes("burn amount exceeds allowance")) {
+            await displayErrorMessage(`Error: Market not approved to spend token!`);
+        }
         else if ((error.message).includes("No spots left")) {
             await displayErrorMessage(`Error: No spots left!`);
         }
         else if ((error.message).includes("transfer amount exceeds balance")) {
-            await displayErrorMessage(`Error: Insufficent $BAMBOO balance!`);
+            await displayErrorMessage(`Error: Insufficent token balance!`);
         }
         else if ((error.message).includes("burn amount exceeds balance")) {
-            await displayErrorMessage(`Error: Insufficent $BAMBOO balance!`);
-        }
-        else if ((error.message).includes("burn amount exceeds allowance")) {
-            await displayErrorMessage(`Error: Market not approved to spend $BAMBOO!`);
+            await displayErrorMessage(`Error: Insufficent token balance!`);
         }
         else if ((error.message).includes("User denied transaction signature")) {
             console.log("Transaction rejected.");
@@ -289,15 +305,22 @@ const loadCollections = async() => {
                 marketContract = market;
             }
 
-            let WLinfo = await marketContract.getWhitelist(id);
+            let WLinfo;
+            if (version == 1) {
+                WLinfo = await marketContract.getWhitelist(id);
+            }
+            else {
+                WLinfo = await marketContract.getWhitelist(id - V2_START);
+            }
+
             let collectionPrice;
-            let discountMultiplier = 1;
+            let discountMultiplier = 100;
 
             if (version == 2) {
                 if (WLinfo.acceptedCurrency == bambooAddress) {
                     let expandablesStaked = (await bamboo.stakedPandasOf((await getAddress()))).length;
-                    discountMultiplier = 1 - min((expandablesStaked * (WLinfo.percentPerToken/100).toFixed(0)), (WLinfo.maxTotalPercent/100).toFixed(0));
-                    collectionPrice = Number(formatEther(WLinfo.price)) * discountMultiplier;
+                    discountMultiplier = 100 - Math.min(expandablesStaked * WLinfo.percentPerToken, WLinfo.maxTotalPercent);
+                    collectionPrice = Number(formatEther(WLinfo.price)) * discountMultiplier/100;
                 }
                 else {
                     collectionPrice = Number(formatEther(WLinfo.price));
@@ -307,7 +330,7 @@ const loadCollections = async() => {
                 collectionPrice = Number(formatEther(WLinfo.price));
             }
 
-            let discountCaption = (discountMultiplier == 1) ? "" : `-${((1 - discountMultiplier)*100).toFixed(0)}%`;
+            let discountCaption = (discountMultiplier == 100) ? "" : `-${100 - discountMultiplier}%`;
 
             let tokenImg;
             if (version == 2) {
@@ -447,7 +470,17 @@ const updateSupplies = async() => {
     let projectIDs = Object.keys(collectionsData);
     for (let i = 0; i < projectIDs.length; i++) {
         let id = Number(projectIDs[i]);
-        let WLinfo = await market.getWhitelist(id);
+        let WLinfo;
+        let version;
+        let marketContract;
+        if (id < V2_START) {
+            marketContract = oldMarket;
+            WLinfo = await marketContract.getWhitelist(id);
+        }
+        else {
+            marketContract = market;
+            WLinfo = await marketContract.getWhitelist(id - V2_START);
+        }
         let collection = collectionsData[String(id)];
         let max = collection["max-slots"];
         let minted = max - WLinfo.amount;

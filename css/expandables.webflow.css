@@ -25,7 +25,7 @@
   bottom: 30px;
   font-size: 1.5vw;
   line-height: 1.7vw;
-  z-index: 10;
+  z-index: 99999999;
   display: flex;
   align-items: center;
   padding: 15px;
@@ -1907,7 +1907,7 @@ p {
     color: black;
     border: 1px solid black;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    z-index: 999999;
+    z-index: 99999999;
   }
   /* .bamboo-balance-float img {
     margin-left: 10px;
