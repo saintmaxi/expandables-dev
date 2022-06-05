@@ -1058,5 +1058,15 @@
         "max-slots": 10,
         "discord-required": "false",
         "display-on-market": "true"
+    },
+    "110": {
+        "name": "Test #3",
+        "description": "The possibilities are endless... Build, Share & Earn in the Metaverse. 🛠️ Supply of 4,444",
+        "image": "https://pbs.twimg.com/profile_images/1447389249804791808/T2yW38i8_400x400.jpg",
+        "website": "https://www.squishiverse.com/",
+        "twitter": "https://twitter.com/SquishiverseNFT",
+        "max-slots": 15,
+        "discord-required": "false",
+        "display-on-market": "true"
     }
 }
