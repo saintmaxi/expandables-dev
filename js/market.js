@@ -30,7 +30,7 @@ const marketAbi = () => {
 
 const etherscanBase = `https://etherscan.io/tx/`;
 const correctChain = 1;
-const V2_START = 108;
+const V2_START = 114;
 const bambooImgURL = "./images/bamboo-icon.png";
 
 let supportedTokens = {"0xA75F96760B715A5958a62FDe3D739eB8b2A50A7C" : "./images/bamboo-icon.png",

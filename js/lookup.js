@@ -26,7 +26,7 @@ const bambooAbi = ()=>{
 const etherscanBase = `https://etherscan.io/tx/`;
 const correctChain = 1;
 const bambooImgURL = "./images/bamboo-icon.png";
-const V2_START = 108;
+const V2_START = 114;
 
 /*********************************************************************************/
 /********************************DEV CONFIG********************************/
