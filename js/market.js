@@ -196,7 +196,9 @@ const purchaseWithName = async(id) => {
             await marketContract.purchaseWithName(id, name).then( async(tx_) => {
                 await waitForTransaction(tx_);
                 $('#discord-popup').remove();
-                $('#block-screen-discord').remove()
+                $('#block-screen-discord').remove();
+                await getBambooBalance();
+                await updateSupplies();
             });
         }
     }
@@ -205,6 +207,9 @@ const purchaseWithName = async(id) => {
             await displayErrorMessage(`Error: You already purchased a slot!`);
         }
         else if ((error.message).includes("burn amount exceeds allowance")) {
+            await displayErrorMessage(`Error: Market not approved to spend token!`);
+        }
+        else if ((error.message).includes("transfer amount exceeds allowance")) {
             await displayErrorMessage(`Error: Market not approved to spend token!`);
         }
         else if ((error.message).includes("No spots left")) {
@@ -239,6 +244,8 @@ const purchase  = async(id) => {
         }
         await marketContract.purchase(id).then( async(tx_) => {
             await waitForTransaction(tx_);
+            await getBambooBalance();
+            await updateSupplies();
         });
     }
     catch (error) {
@@ -246,6 +253,9 @@ const purchase  = async(id) => {
             await displayErrorMessage(`Error: You already purchased a slot!`);
         }
         else if ((error.message).includes("burn amount exceeds allowance")) {
+            await displayErrorMessage(`Error: Market not approved to spend token!`);
+        }
+        else if ((error.message).includes("transfer amount exceeds allowance")) {
             await displayErrorMessage(`Error: Market not approved to spend token!`);
         }
         else if ((error.message).includes("No spots left")) {
@@ -348,16 +358,20 @@ const loadCollections = async() => {
             let discordRequired = (collectionsData[String(id)]["discord-required"] == "true");
 
             let winners = [];
+            let eventID = id;
+            if (version == 2) {
+                eventID -= V2_START;
+            }
             if (discordRequired) {
-                let eventFilterName = market.filters.PurchasedWithName(id);
-                let eventsName = await market.queryFilter(eventFilterName);
+                let eventFilterName = marketContract.filters.PurchasedWithName(eventID);
+                let eventsName = await marketContract.queryFilter(eventFilterName);
                 for (let i = 0; i < eventsName.length; i++) {
                     winners.push(`${eventsName[i].args._address}`);
                 }
             }
             else {
-                let eventFilter = market.filters.Purchase(id);
-                let events = await market.queryFilter(eventFilter);
+                let eventFilter = marketContract.filters.Purchase(eventID);
+                let events = await marketContract.queryFilter(eventFilter);
                 for (let i = 0; i < events.length; i++) {
                     winners.push(`${events[i].args._address}`);
                 }
